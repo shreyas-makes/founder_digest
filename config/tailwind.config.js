@@ -15,7 +15,10 @@ module.exports = {
       },
       // custom color palette for branding, see https://tailwindcss.com/docs/customizing-colors
       colors: {
-        primary: colors.lime
+        'primary': '#249044',
+               'primary-hover': {
+                 '700': '#217B38',
+                 '500': '#217B38'
       },
       keyframes: {
         flashfade: { "0%, 100%": { opacity: "0" }, "5%, 80%": { opacity: "1" } },
