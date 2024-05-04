@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'apply', to: 'pages#apply'
   get 'start', to: 'pages#start'
+  # hey there
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_up: 'signup' }
   get 'logout', to: 'pages#logout', as: 'logout'
