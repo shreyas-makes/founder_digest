@@ -1,1 +1,54 @@
+<%= render partial:"shared/heading", locals: {title: 'Dashboard', tagline: 'Browse newsletters and upload your own'} %>
 
+
+<!-- Tile -->
+<div class="border-black/20 border-2 border-dashed p-5 mt-5 max-w-4xl mx-auto rounded-lg">
+    <div class="flex">
+        <div class="basis-4/12">
+            <div class="flex gap-x-2">
+                <div class="basis-1/4">
+                   <img src="https://placehold.co/400x400/png">
+                </div>
+                <div class="basis-3/4">
+                    <p class="text-lg">{{title}}</p>
+                    <p class="text-xs">{{description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="basis-8/12 text-right">
+            <div><a href="#" >{{Num}} Subscribers</a></div>
+            <div><a href="#" class="underline">Share updates</a></div>
+            <div><a href="#" class="underline">Edit Subscription</a></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Newsletters -->
+
+<div class="p-5 max-w-4xl mx-auto rounded-lg mt-20">
+    <div class="flex">
+        <div class="basis-4/12">
+            <div class="flex gap-x-2">
+                <div class="basis-1/4">
+                   <img src="https://placehold.co/400x400/png">
+                </div>
+                <div class="basis-3/4">
+                    <p class="text-lg">{{title}}</p>
+                    <p class="text-xs">{{description}} {{ url }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="basis-8/12 text-right">
+            <div class="relative flex items-start justify-end">
+                  <div>
+                    <input id="subscribed" aria-describedby="subscribed-description" name="subscribed" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary">
+                  </div>
+
+                  <div class="ml-3 text-sm leading-6">
+                    <label for="subscribed" class="font-medium text-gray-900">{{Subscribe Status}}</label>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
