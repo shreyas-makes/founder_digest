@@ -17,7 +17,9 @@
 
     <div id="main-nav" class="w-full flex-grow sm:flex text-right sm:w-auto hidden" data-header-target="mainNav">
       <div class="text-sm sm:flex-grow">
-        <%= link_to 'Dashboard', dashboard_index_path, class: nav_link_classes('dashboard') %>
+          <!-- # TODO -- Add Admin only for selected users, and not all logged in users -->
+        <%= link_to 'Admin', admin_path, class: nav_link_classes('admin') %>
+        <%= link_to 'Dashboard', dashboard_path, class: nav_link_classes('dashboard') %>
         <%= link_to 'Logout', logout_path, class: nav_link_classes('logout') %>
       </div>
     </div>
